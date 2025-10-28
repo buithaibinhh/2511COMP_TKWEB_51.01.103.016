@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng Quản lý sản phẩm</title>
+    <link rel="stylesheet" href="3.3.css"> 
+</head>
+<body>
+    <div id="app">
+        <h1>Add New Product</h1>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="New Product Name" required>
+            <button type="submit" id="add-btn">Thêm</button>
+        </form>
+
+        <h2>Display All Product</h2>
+        <p><span id="product-count">0</span> products</p>
+        
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Product Name</th>
+                    <th colspan="2">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="product-list">
+                </tbody>
+        </table>
+        
+        <form id="edit-form" style="display: none; margin-top: 20px;">
+            <h3>Sửa Tên Sản Phẩm</h3>
+            <input type="text" id="edit-id" hidden>
+            <input type="text" id="edit-product-name" required>
+            <button type="submit">Sửa</button>
+            <button type="button" id="cancel-edit-btn">Hủy</button>
+        </form>
+
+        <p id="message" style="color: green; font-weight: bold;"></p>
+    </div>
+
+    <script src="3.3.js"></script>
+</body>
+</html>
